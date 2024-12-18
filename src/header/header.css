@@ -1,0 +1,113 @@
+.header{
+    height: 60px;
+    display: flex;
+    align-items: center;
+    background-color: #131921;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+.header__search{
+    border: 0px solid #fff;
+    display: flex;
+    flex: 1;
+    align-items: center;
+    border-radius: 24px;
+}
+.header__logo{
+    width: 100px;
+    object-fit: contain;
+    margin: 0 20px;  
+}
+.header__searchInput{
+    height: 25px;
+    padding: 10px;
+    border: none;
+    width: 100%;
+}
+.header__searchIcon{
+    padding: 1px;
+    height: 25px !important;
+    background-color: #cd9042;
+}
+.header__nav{
+    display: flex;
+    justify-content: space-evenly
+}
+.header__option{
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    margin-right: 10px;   
+}
+.header__optionOne{
+    font-size: 10px;
+}
+.header__optionTwo{
+    font-size: 13px;
+    font-weight: 800;
+}
+.header__optionBasket{
+    border: 0px solid #fff;
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+.header__basketCount{
+    font-size: 16px;
+    margin-left: 10px;
+    margin-right: 10px;
+
+}
+
+/* DropDown Select Lang CSS */
+:root {
+    --background-gradient: linear-gradient(178deg, #ffff33 10%, #3333ff);
+    --gray: #34495e;
+    --darkgray: #2c3e50;
+  }
+  
+  select {
+    /* Reset Select */
+    appearance: none;
+    outline: 10px red;
+    border: 0;
+    box-shadow: none;
+    /* Personalize */
+    flex: 1;
+    padding: 0 1em;
+    color: #fff;
+    background-color: var(--darkgray);
+    background-image: none;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+  }
+  /* Remove IE arrow */
+  select::-ms-expand {
+    display: none;
+  }
+  /* Custom Select wrapper */
+  .select {
+    position: relative;
+    display: flex;
+    width: 8em;
+    height: 2.5em;
+    border-radius: .25em;
+    overflow: hidden;
+  }
+  /* Arrow */
+  .select::after {
+    content: '\25BC';
+    position: absolute;
+    top: -5px;
+    right: 0;
+    padding: 1em;
+    background-color: #34495e;
+    transition: .5s all ease;
+    pointer-events: none;
+  }
+  /* Transition */
+  .select:hover::after {
+    color: #f39c12;
+  }
